@@ -8,7 +8,13 @@ namespace FizzBuzzKata;
 public class FizzBuzzTests
 {
     [Fact]
-    public void Test1()
+    public void Fizz_Buzz_Game()
     {
+        var sut = new FizzBuzz();
+        var playValue = 5;
+
+        var result = sut.PlayFizzBuzz(playValue);
+        
+        Assert.Equal("Buzz", result);
     }
 }
